@@ -15,7 +15,7 @@ object MainTaskOneAndTaskTwo extends App{
   supervisor ! CreateChild("2")
   supervisor ! CreateChild("3")
   
-  // Calling the main actor. (Step - 4)
+  // Printing the count of total number of hops travelled. (Step - 11)
   supervisor ! Display()
 
   Thread.sleep(5000)
